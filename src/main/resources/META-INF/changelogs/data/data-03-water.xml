@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="00001-20190406" author="mlukec" dbms="postgresql">
+
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 08:00:00</column>
+            <column name="WEIGHT">800</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 08:23:00</column>
+            <column name="WEIGHT">798</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 08:23:10</column>
+            <column name="WEIGHT">796</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 08:23:20</column>
+            <column name="WEIGHT">793</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 09:53:40</column>
+            <column name="WEIGHT">790</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 09:53:50</column>
+            <column name="WEIGHT">785</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 09:54:00</column>
+            <column name="WEIGHT">783</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 11:15:00</column>
+            <column name="WEIGHT">780</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 11:15:10</column>
+            <column name="WEIGHT">777</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 13:22:10</column>
+            <column name="WEIGHT">775</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 13:22:20</column>
+            <column name="WEIGHT">772</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-04-06 13:22:30</column>
+            <column name="WEIGHT">769</column>
+        </insert>
+
+
+    </changeSet>
+
+</databaseChangeLog>

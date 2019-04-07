@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <preConditions onFail="WARN">
+        <dbms type="postgresql"/>
+    </preConditions>
+
+    <include file="/META-INF/changelogs/postgresql/columns-01-temperature.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-02-food.xml"/>
+    <include file="/META-INF/changelogs/postgresql/columns-03-water.xml"/>
+
+
+</databaseChangeLog>

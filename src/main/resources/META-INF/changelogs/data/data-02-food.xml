@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="00001-20190406" author="mlukec" dbms="postgresql">
+
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 08:00:00</column>
+            <column name="WEIGHT">50</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 08:23:10</column>
+            <column name="WEIGHT">46</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 08:23:20</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 08:23:40</column>
+            <column name="WEIGHT">40</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:42:43</column>
+            <column name="WEIGHT">39</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:42:53</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:43:03</column>
+            <column name="WEIGHT">36</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:43:13</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:43:23</column>
+            <column name="WEIGHT">31</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:43:33</column>
+            <column name="WEIGHT">29</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 11:43:43</column>
+            <column name="WEIGHT">26</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 13:00:00</column>
+            <column name="WEIGHT">28</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 13:00:10</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-04-06 13:00:20</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
