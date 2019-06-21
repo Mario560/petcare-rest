@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @SessionAttributes({"refillStatus"})
 @RequestMapping("/food")
+@CrossOrigin
 public class FoodController {
 
     @Autowired
@@ -33,6 +34,7 @@ public class FoodController {
     @GetMapping("/refill")
     public ResponseEntity<Void> refillFood(){
 
+        System.out.println("refill");
         refillStatus = true;
 
         return new ResponseEntity<>(HttpStatus.OK);
@@ -71,7 +73,6 @@ public class FoodController {
 
 
     @PostMapping("/graph-stats")
-    @CrossOrigin
     public ResponseEntity<List<Food>> getGraphStatsForTimeframe(@RequestBody TimeframeForm timeframeForm){
         List<Food> foodList = foodService.getStatsInTimeframe(timeframeForm);
 
