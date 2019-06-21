@@ -12,4 +12,6 @@ public interface FoodService {
 
     List<Food> getStatsInTimeframe(TimeframeForm timeframeForm);
 
+    Double getAteDoday();
+
 }

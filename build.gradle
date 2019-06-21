@@ -33,3 +33,7 @@ dependencies {
 
     runtime 'org.postgresql:postgresql'
 }
+
+wrapper {
+    gradleVersion = '5.2.1'
+}

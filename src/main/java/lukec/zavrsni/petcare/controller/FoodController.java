@@ -38,6 +38,15 @@ public class FoodController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping("/ate-today")
+    public ResponseEntity<Double> ateToday(){
+
+        Double ateToday = foodService.getAteDoday();
+
+        return new ResponseEntity<>(ateToday, HttpStatus.OK);
+    }
+
+
     @GetMapping("/refill-status")
     public ResponseEntity<Void> refillFoodStatus(){
 
@@ -50,7 +59,8 @@ public class FoodController {
     }
 
 
-    @GetMapping("/graph-stats")
+    @PostMapping("/graph-stats")
+    @CrossOrigin
     public ResponseEntity<List<Food>> getGraphStatsForTimeframe(@RequestBody TimeframeForm timeframeForm){
         List<Food> foodList = foodService.getStatsInTimeframe(timeframeForm);
 

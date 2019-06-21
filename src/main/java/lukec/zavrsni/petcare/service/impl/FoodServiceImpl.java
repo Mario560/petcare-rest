@@ -28,9 +28,31 @@ public class FoodServiceImpl implements FoodService {
 
     @Override
     public List<Food> getStatsInTimeframe(TimeframeForm timeframeForm) {
-
-
         return foodRepository.getAllByTimestampBetween(timeframeForm.getStartTime(), timeframeForm.getEndTime());
+    }
+
+    @Override
+    public Double getAteDoday() {
+
+        LocalDateTime today = LocalDateTime.now();
+        LocalDateTime start = today.withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime end = today.withHour(23).withMinute(59).withSecond(59);
+        List<Food> food = foodRepository.getAllByTimestampBetween(start, end);
+
+        if(food.isEmpty()) {
+            return 0d;
+        }
+
+        Double ateToday = 0d;
+        Double lastWeigth = food.get(0).getWeight();
+        for (Food f : food) {
+            if(f.getWeight() < lastWeigth){
+                ateToday += lastWeigth - f.getWeight();
+            }
+            lastWeigth = f.getWeight();
+        }
+
+        return ateToday;
     }
 }
 
