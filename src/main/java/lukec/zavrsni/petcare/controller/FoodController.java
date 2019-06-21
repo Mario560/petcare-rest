@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -46,6 +46,17 @@ public class FoodController {
         return new ResponseEntity<>(ateToday, HttpStatus.OK);
     }
 
+    @GetMapping("/current")
+    public ResponseEntity<Double> currentWeight(){
+
+        return new ResponseEntity<>(foodService.getCurrentWeight(), HttpStatus.OK);
+    }
+
+    @GetMapping("/last-time-ate-today")
+    public ResponseEntity<LocalDateTime> lastTimeateToday(){
+
+        return new ResponseEntity<>(foodService.getLastTimeAteToday(), HttpStatus.OK);
+    }
 
     @GetMapping("/refill-status")
     public ResponseEntity<Void> refillFoodStatus(){

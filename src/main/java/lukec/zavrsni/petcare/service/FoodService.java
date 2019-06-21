@@ -4,6 +4,7 @@ import lukec.zavrsni.petcare.form.FoodForm;
 import lukec.zavrsni.petcare.form.TimeframeForm;
 import lukec.zavrsni.petcare.model.Food;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface FoodService {
@@ -13,5 +14,12 @@ public interface FoodService {
     List<Food> getStatsInTimeframe(TimeframeForm timeframeForm);
 
     Double getAteDoday();
+
+    LocalDateTime getLastTimeAteToday();
+
+    Double getCurrentWeight();
+
+
+
 
 }

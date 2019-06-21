@@ -54,6 +54,28 @@ public class FoodServiceImpl implements FoodService {
 
         return ateToday;
     }
+
+    @Override
+    public LocalDateTime getLastTimeAteToday() {
+        LocalDateTime last = foodRepository.getLastTimeAteToday();
+
+        if(last == null){
+            return null;
+        }
+
+        return last;
+    }
+
+    @Override
+    public Double getCurrentWeight() {
+        Double weight = foodRepository.getCurrentWeight();
+
+        if(weight == null){
+            return 0d;
+        }
+
+        return weight;
+    }
 }
 
 
