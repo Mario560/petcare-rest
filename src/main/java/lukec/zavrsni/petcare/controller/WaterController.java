@@ -1,6 +1,8 @@
 package lukec.zavrsni.petcare.controller;
 
+import lukec.zavrsni.petcare.form.TimeframeForm;
 import lukec.zavrsni.petcare.form.WaterForm;
+import lukec.zavrsni.petcare.model.Water;
 import lukec.zavrsni.petcare.service.WaterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequestMapping("/water")
@@ -24,8 +27,15 @@ public class WaterController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @PostMapping("/graph-stats")
+    public ResponseEntity<List<Water>> getGraphStatsForTimeframe(@RequestBody TimeframeForm timeframeForm){
+        List<Water> waterList = waterService.getStatsInTimeframe(timeframeForm);
+
+        return new ResponseEntity<>(waterList, HttpStatus.OK);
+    }
+
     @GetMapping("/drank-today")
-    public ResponseEntity<Double> ateToday(){
+    public ResponseEntity<Double> drankToday(){
 
         Double ateToday = waterService.getDrankToday();
 
@@ -39,7 +49,7 @@ public class WaterController {
     }
 
     @GetMapping("/last-time-drank-today")
-    public ResponseEntity<LocalDateTime> lastTimeateToday(){
+    public ResponseEntity<LocalDateTime> lastTimeDrankToday(){
 
         return new ResponseEntity<>(waterService.getLastTimeDrankToday(), HttpStatus.OK);
     }

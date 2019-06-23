@@ -55,7 +55,7 @@ public class FoodController {
     }
 
     @GetMapping("/last-time-ate-today")
-    public ResponseEntity<LocalDateTime> lastTimeateToday(){
+    public ResponseEntity<LocalDateTime> lastTimeAteToday(){
 
         return new ResponseEntity<>(foodService.getLastTimeAteToday(), HttpStatus.OK);
     }

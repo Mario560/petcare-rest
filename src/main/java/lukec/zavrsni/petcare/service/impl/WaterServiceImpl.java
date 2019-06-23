@@ -1,5 +1,6 @@
 package lukec.zavrsni.petcare.service.impl;
 
+import lukec.zavrsni.petcare.form.TimeframeForm;
 import lukec.zavrsni.petcare.form.WaterForm;
 import lukec.zavrsni.petcare.model.Water;
 import lukec.zavrsni.petcare.repository.WaterRepository;
@@ -23,6 +24,11 @@ public class WaterServiceImpl implements WaterService {
         water.setTimestamp(LocalDateTime.now());
 
         waterRepository.save(water);
+    }
+
+    @Override
+    public List<Water> getStatsInTimeframe(TimeframeForm timeframeForm) {
+        return waterRepository.getAllByTimestampBetween(timeframeForm.getStartTime(), timeframeForm.getEndTime());
     }
 
     @Override
