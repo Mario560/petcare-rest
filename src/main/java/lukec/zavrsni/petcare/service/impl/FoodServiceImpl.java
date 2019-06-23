@@ -32,7 +32,7 @@ public class FoodServiceImpl implements FoodService {
     }
 
     @Override
-    public Double getAteDoday() {
+    public Double getAteToday() {
 
         LocalDateTime today = LocalDateTime.now();
         LocalDateTime start = today.withHour(0).withMinute(0).withSecond(0);
@@ -52,18 +52,31 @@ public class FoodServiceImpl implements FoodService {
             lastWeigth = f.getWeight();
         }
 
-        return ateToday;
+        return (double)Math.round(ateToday);
     }
 
     @Override
     public LocalDateTime getLastTimeAteToday() {
-        LocalDateTime last = foodRepository.getLastTimeAteToday();
 
-        if(last == null){
+        LocalDateTime today = LocalDateTime.now();
+        LocalDateTime start = today.withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime end = today.withHour(23).withMinute(59).withSecond(59);
+        List<Food> food = foodRepository.getAllByTimestampBetween(start, end);
+
+        if(food.isEmpty()) {
             return null;
         }
 
-        return last;
+        LocalDateTime lastAte = null;
+        Double lastWeigth = food.get(0).getWeight();
+        for (Food f : food) {
+            if(f.getWeight() < lastWeigth){
+                lastAte = f.getTimestamp();
+            }
+            lastWeigth = f.getWeight();
+        }
+
+        return lastAte;
     }
 
     @Override
@@ -74,7 +87,7 @@ public class FoodServiceImpl implements FoodService {
             return 0d;
         }
 
-        return weight;
+        return (double)Math.round(weight);
     }
 }
 

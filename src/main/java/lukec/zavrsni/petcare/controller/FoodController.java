@@ -27,6 +27,7 @@ public class FoodController {
 
     @PostMapping
     public ResponseEntity<Void> enterFood(@RequestBody FoodForm foodForm){
+        System.out.println("food " + foodForm.getWeight());
         foodService.save(foodForm);
         return new ResponseEntity<>(HttpStatus.OK);
     }
@@ -34,7 +35,6 @@ public class FoodController {
     @GetMapping("/refill")
     public ResponseEntity<Void> refillFood(){
 
-        System.out.println("refill");
         refillStatus = true;
 
         return new ResponseEntity<>(HttpStatus.OK);
@@ -43,7 +43,7 @@ public class FoodController {
     @GetMapping("/ate-today")
     public ResponseEntity<Double> ateToday(){
 
-        Double ateToday = foodService.getAteDoday();
+        Double ateToday = foodService.getAteToday();
 
         return new ResponseEntity<>(ateToday, HttpStatus.OK);
     }
@@ -64,6 +64,7 @@ public class FoodController {
     public ResponseEntity<Void> refillFoodStatus(){
 
         if(refillStatus == true){
+            System.out.println("refill staus true");
             refillStatus = false;
             return new ResponseEntity<>(HttpStatus.OK);
         }
