@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/temperature")
+@CrossOrigin
 public class TemperatureController {
 
     @Autowired
@@ -22,7 +23,6 @@ public class TemperatureController {
     @PostMapping
     public ResponseEntity<Void> enterTemperature(@RequestBody TemperatureForm temperatureForm){
 
-//        System.out.println(temperatureForm.getTemperature() + " at " + LocalDateTime.now());
         temperatureService.save(temperatureForm);
 
         return new ResponseEntity<>(HttpStatus.OK);
