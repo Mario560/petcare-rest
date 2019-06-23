@@ -20,6 +20,8 @@ repositories {
 }
 
 dependencies {
+    compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+    implementation "org.springframework.data:spring-data-jpa"
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.liquibase:liquibase-core'
     compileOnly 'org.projectlombok:lombok'
@@ -29,7 +31,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
-    implementation "org.springframework.data:spring-data-jpa"
 
     runtime 'org.postgresql:postgresql'
 }
