@@ -27,7 +27,6 @@ public class FoodController {
 
     @PostMapping
     public ResponseEntity<Void> enterFood(@RequestBody FoodForm foodForm){
-        System.out.println("food " + foodForm.getWeight());
         foodService.save(foodForm);
         return new ResponseEntity<>(HttpStatus.OK);
     }

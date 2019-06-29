@@ -22,7 +22,6 @@ public class WaterController {
 
     @PostMapping
     public ResponseEntity<Void> enterWater(@RequestBody WaterForm waterForm){
-        System.out.println("water " + waterForm.getWeight());
         waterService.save(waterForm);
         return new ResponseEntity<>(HttpStatus.OK);
     }
