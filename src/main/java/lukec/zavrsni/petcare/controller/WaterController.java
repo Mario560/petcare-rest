@@ -34,10 +34,10 @@ public class WaterController {
         return new ResponseEntity<>(waterList, HttpStatus.OK);
     }
 
-    @GetMapping("/drank-today")
-    public ResponseEntity<Double> drankToday(){
+    @PostMapping("/drank-today")
+    public ResponseEntity<Double> drankToday(@RequestBody TimeframeForm timeframeForm){
 
-        Double ateToday = waterService.getDrankToday();
+        Double ateToday = waterService.getDrankThatDay(timeframeForm);
 
         return new ResponseEntity<>(ateToday, HttpStatus.OK);
     }

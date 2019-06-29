@@ -32,11 +32,10 @@ public class FoodServiceImpl implements FoodService {
     }
 
     @Override
-    public Double getAteToday() {
+    public Double getAteOnDay(TimeframeForm timeframeForm) {
 
-        LocalDateTime today = LocalDateTime.now();
-        LocalDateTime start = today.withHour(0).withMinute(0).withSecond(0);
-        LocalDateTime end = today.withHour(23).withMinute(59).withSecond(59);
+        LocalDateTime start = timeframeForm.getStartTime().withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime end = timeframeForm.getEndTime().withHour(23).withMinute(59).withSecond(59);
         List<Food> food = foodRepository.getAllByTimestampBetween(start, end);
 
         if(food.isEmpty()) {

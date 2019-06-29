@@ -17,8 +17,6 @@ public class Food {
     @Column(name = "WEIGHT", nullable = false)
     private Double weight;
 
-
-
     // getters and setters
 
     public LocalDateTime getTimestamp() {

@@ -40,10 +40,10 @@ public class FoodController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @GetMapping("/ate-today")
-    public ResponseEntity<Double> ateToday(){
+    @PostMapping("/ate-today")
+    public ResponseEntity<Double> ateToday(@RequestBody TimeframeForm timeframeForm){
 
-        Double ateToday = foodService.getAteToday();
+        Double ateToday = foodService.getAteOnDay(timeframeForm);
 
         return new ResponseEntity<>(ateToday, HttpStatus.OK);
     }

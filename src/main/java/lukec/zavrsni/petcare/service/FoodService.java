@@ -13,7 +13,7 @@ public interface FoodService {
 
     List<Food> getStatsInTimeframe(TimeframeForm timeframeForm);
 
-    Double getAteToday();
+    Double getAteOnDay(TimeframeForm timeframeForm);
 
     LocalDateTime getLastTimeAteToday();
 

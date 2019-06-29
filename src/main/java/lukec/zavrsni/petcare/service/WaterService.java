@@ -13,7 +13,7 @@ public interface WaterService {
 
     List<Water> getStatsInTimeframe(TimeframeForm timeframeForm);
 
-    Double getDrankToday();
+    Double getDrankThatDay(TimeframeForm timeframeForm);
 
     LocalDateTime getLastTimeDrankToday();
 

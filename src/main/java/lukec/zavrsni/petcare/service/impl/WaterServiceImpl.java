@@ -32,10 +32,10 @@ public class WaterServiceImpl implements WaterService {
     }
 
     @Override
-    public Double getDrankToday() {
-        LocalDateTime today = LocalDateTime.now();
-        LocalDateTime start = today.withHour(0).withMinute(0).withSecond(0);
-        LocalDateTime end = today.withHour(23).withMinute(59).withSecond(59);
+    public Double getDrankThatDay(TimeframeForm timeframeForm) {
+
+        LocalDateTime start = timeframeForm.getStartTime().withHour(0).withMinute(0).withSecond(0);
+        LocalDateTime end = timeframeForm.getEndTime().withHour(23).withMinute(59).withSecond(59);
         List<Water> water = waterRepository.getAllByTimestampBetween(start, end);
 
         if(water.isEmpty()) {
