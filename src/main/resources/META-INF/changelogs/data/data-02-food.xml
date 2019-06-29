@@ -110,5 +110,166 @@
 
     </changeSet>
 
+    <changeSet id="00001-20190629" author="mlukec" dbms="postgresql">
 
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 08:00:00</column>
+            <column name="WEIGHT">50</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 08:23:10</column>
+            <column name="WEIGHT">46</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 08:23:20</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 08:23:40</column>
+            <column name="WEIGHT">40</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:42:43</column>
+            <column name="WEIGHT">39</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:42:53</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:43:03</column>
+            <column name="WEIGHT">36</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:43:13</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:43:23</column>
+            <column name="WEIGHT">31</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:43:33</column>
+            <column name="WEIGHT">29</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-29 11:43:43</column>
+            <column name="WEIGHT">26</column>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="00002-20190629" author="mlukec" dbms="postgresql">
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 08:23:10</column>
+            <column name="WEIGHT">46</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 08:23:20</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 08:23:40</column>
+            <column name="WEIGHT">40</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 11:42:43</column>
+            <column name="WEIGHT">39</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 11:42:53</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 11:43:03</column>
+            <column name="WEIGHT">36</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-06-30 11:43:13</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="00003-20190629" author="mlukec" dbms="postgresql">
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 08:23:10</column>
+            <column name="WEIGHT">46</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 08:23:20</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 08:23:40</column>
+            <column name="WEIGHT">40</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 11:42:43</column>
+            <column name="WEIGHT">39</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 11:42:53</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 11:43:03</column>
+            <column name="WEIGHT">36</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-01 11:43:13</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+
+    </changeSet>
+
+
+    <changeSet id="00004-20190629" author="mlukec" dbms="postgresql">
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:10</column>
+            <column name="WEIGHT">46</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:20</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:40</column>
+            <column name="WEIGHT">40</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 11:42:43</column>
+            <column name="WEIGHT">39</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 11:42:53</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 11:43:03</column>
+            <column name="WEIGHT">36</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 11:43:13</column>
+            <column name="WEIGHT">34</column>
+        </insert>
+
+    </changeSet>
+    
 </databaseChangeLog>
