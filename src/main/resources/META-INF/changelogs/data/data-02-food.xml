@@ -334,5 +334,20 @@
             <column name="WEIGHT">37</column>
         </insert>
     </changeSet>
-    
+
+    <changeSet id="00005-20190702" author="mlukec" dbms="postgresql">
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:00</column>
+            <column name="WEIGHT">48</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:15</column>
+            <column name="WEIGHT">43</column>
+        </insert>
+        <insert tableName="FOOD">
+            <column name="TIMESTAMP">2019-07-02 08:23:30</column>
+            <column name="WEIGHT">38</column>
+        </insert>
+    </changeSet>
+
 </databaseChangeLog>
