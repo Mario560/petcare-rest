@@ -290,47 +290,11 @@
             <column name="WEIGHT">48</column>
         </insert>
         <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 08:23:10</column>
-            <column name="WEIGHT">46</column>
-        </insert>
-        <insert tableName="FOOD">
             <column name="TIMESTAMP">2019-07-02 08:23:20</column>
-            <column name="WEIGHT">43</column>
+            <column name="WEIGHT">40</column>
         </insert>
         <insert tableName="FOOD">
             <column name="TIMESTAMP">2019-07-02 08:23:40</column>
-            <column name="WEIGHT">40</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 11:42:43</column>
-            <column name="WEIGHT">39</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 11:42:53</column>
-            <column name="WEIGHT">38</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 11:43:03</column>
-            <column name="WEIGHT">36</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 11:43:13</column>
-            <column name="WEIGHT">34</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 13:32:03</column>
-            <column name="WEIGHT">38</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 13:32:05</column>
-            <column name="WEIGHT">42</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 13:32:20</column>
-            <column name="WEIGHT">40</column>
-        </insert>
-        <insert tableName="FOOD">
-            <column name="TIMESTAMP">2019-07-02 13:32:30</column>
             <column name="WEIGHT">37</column>
         </insert>
     </changeSet>
