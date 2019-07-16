@@ -58,4 +58,57 @@
 
     </changeSet>
 
+    <changeSet id="00002-20190716" author="mlukec" dbms="postgresql">
+
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 08:00:00</column>
+            <column name="WEIGHT">800</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 08:23:00</column>
+            <column name="WEIGHT">798</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 08:23:10</column>
+            <column name="WEIGHT">796</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 08:23:20</column>
+            <column name="WEIGHT">793</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 09:53:40</column>
+            <column name="WEIGHT">790</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 09:53:50</column>
+            <column name="WEIGHT">785</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 09:54:00</column>
+            <column name="WEIGHT">783</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 11:15:00</column>
+            <column name="WEIGHT">780</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 11:15:10</column>
+            <column name="WEIGHT">777</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 13:22:10</column>
+            <column name="WEIGHT">775</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 13:22:20</column>
+            <column name="WEIGHT">772</column>
+        </insert>
+        <insert tableName="WATER">
+            <column name="TIMESTAMP">2019-07-16 13:22:30</column>
+            <column name="WEIGHT">769</column>
+        </insert>
+
+    </changeSet>
+
 </databaseChangeLog>

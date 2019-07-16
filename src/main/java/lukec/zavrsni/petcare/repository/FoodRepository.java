@@ -2,8 +2,10 @@ package lukec.zavrsni.petcare.repository;
 
 import lukec.zavrsni.petcare.model.Food;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -18,4 +20,9 @@ public interface FoodRepository extends JpaRepository<Food, LocalDateTime> {
 
     @Query(nativeQuery = true, value = "SELECT weight from food order by timestamp DESC LIMIT 1")
     Double getCurrentWeight();
+
+    @Modifying
+    @Transactional
+    @Query(nativeQuery = true, value = "DELETE FROM food  where date (timestamp) =  CURRENT_DATE")
+    void deleteWhereGraduationDay();
 }

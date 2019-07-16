@@ -7,6 +7,7 @@
     <include file="/META-INF/master-postgres.xml"/>
 
     <!-- data -->
+    <include file="/META-INF/changelogs/data/data-clear.xml" />
     <include file="/META-INF/changelogs/data/data-01-temperature.xml" />
     <include file="/META-INF/changelogs/data/data-02-food.xml" />
     <include file="/META-INF/changelogs/data/data-03-water.xml" />

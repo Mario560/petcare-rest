@@ -96,4 +96,95 @@
 
     </changeSet>
 
+    <changeSet id="00001-20190716" author="mlukec" dbms="postgresql">
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 08:00:00</column>
+            <column name="VALUE">21.77</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 08:30:00</column>
+            <column name="VALUE">21.87</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 09:00:00</column>
+            <column name="VALUE">22.01</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 09:30:00</column>
+            <column name="VALUE">22.05</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 10:00:00</column>
+            <column name="VALUE">22.27</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 10:30:00</column>
+            <column name="VALUE">23.12</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 11:00:00</column>
+            <column name="VALUE">23.03</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 11:30:00</column>
+            <column name="VALUE">23.27</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 12:00:00</column>
+            <column name="VALUE">23.67</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 12:30:00</column>
+            <column name="VALUE">23.90</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 13:00:00</column>
+            <column name="VALUE">23.87</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 13:30:00</column>
+            <column name="VALUE">23.77</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 14:00:00</column>
+            <column name="VALUE">23.98</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 14:30:00</column>
+            <column name="VALUE">24.07</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 15:00:00</column>
+            <column name="VALUE">24.01</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 15:30:00</column>
+            <column name="VALUE">24.41</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 16:00:00</column>
+            <column name="VALUE">23.72</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 16:30:00</column>
+            <column name="VALUE">23.40</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 17:00:00</column>
+            <column name="VALUE">23.22</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 17:30:00</column>
+            <column name="VALUE">23.00</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 18:00:00</column>
+            <column name="VALUE">22.47</column>
+        </insert>
+        <insert tableName="TEMPERATURE">
+            <column name="TIMESTAMP">2019-07-16 18:30:00</column>
+            <column name="VALUE">22.52</column>
+        </insert>
+
+    </changeSet>
 </databaseChangeLog>
